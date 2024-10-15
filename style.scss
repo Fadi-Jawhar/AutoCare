@@ -1,56 +1,49 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #0A2035;
     padding: 20px;
 
-    .logo{
-        margin-right: auto;
-        img{
-            height: 250px;
-            display: block;
-            
-        }
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end; // Align all children (ul, button) to the bottom
-    height: 100px; // Set the height to control space from top to bottom
-        
-        
-}
-    ul {
+    nav {
         display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
+        justify-content: space-between; // This will separate the logo and links
+        align-items: center; // Vertically center the logo, ul, and button
+        height: 80px;
 
-    li {
-        a {
-            color: #C5C5C5;
-            text-decoration: none;
-            font-size: 22px;
-            padding: 10px;
-            margin-right: 50px;
-
-            &:hover {
-                color: #969696;
-                text-decoration: underline;
+        .logo {
+            img {
+                height: 200px; // Adjust the logo size if needed
+                display: block;               
             }
         }
-    }
 
-    // Adjusting the button to match the link's alignment
-    button {
-        padding: 10px 15px; // Adjust padding to match link's padding
-        background-color: #2E2E2E;
-        color: #d1d0d0;
-        border-radius: 10px;
-        margin-left: 50px; // Spacing between the last link and the button
-        align-self: flex-end; // Ensures the button aligns with the bottom
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: auto; // Push the links to the right
+        }
+
+        li {
+            a {
+                color: #C5C5C5;
+                text-decoration: none;
+                font-size: 22px;
+                padding: 10px;
+                margin-right: 50px;
+
+                &:hover {
+                    color: #969696;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #2E2E2E;
+            color: #d1d0d0;
+            border-radius: 10px;
+            margin-left: 20px; // Space between links and button
+        }
     }
 }
