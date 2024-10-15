@@ -16,3 +16,21 @@ header nav li a {
 header nav li a:hover {
   text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
+header {
+  background-color: #0A2035;
+  padding: 20px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+header nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+header nav li a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
