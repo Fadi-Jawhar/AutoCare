@@ -1,32 +1,41 @@
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #0A2035;
   padding: 20px;
 }
-
-nav {
+header .logo {
+  margin-right: auto;
+}
+header .logo img {
+  height: 250px;
+  display: block;
+}
+header nav {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   height: 100px;
 }
-nav ul {
+header ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-nav li a {
+header li a {
   color: #C5C5C5;
   text-decoration: none;
   font-size: 22px;
   padding: 10px;
   margin-right: 50px;
 }
-nav li a:hover {
+header li a:hover {
   color: #969696;
   text-decoration: underline;
 }
-nav button {
+header button {
   padding: 10px 15px;
   background-color: #2E2E2E;
   color: #d1d0d0;

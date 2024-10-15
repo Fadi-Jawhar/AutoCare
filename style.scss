@@ -1,6 +1,17 @@
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #0A2035;
     padding: 20px;
+
+    .logo{
+        margin-right: auto;
+        img{
+            height: 250px;
+            display: block;
+            
+        }
 }
 
 nav {
@@ -8,7 +19,9 @@ nav {
     justify-content: flex-end;
     align-items: flex-end; // Align all children (ul, button) to the bottom
     height: 100px; // Set the height to control space from top to bottom
-
+        
+        
+}
     ul {
         display: flex;
         list-style: none;
