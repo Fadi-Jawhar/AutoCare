@@ -2,35 +2,26 @@ header {
   background-color: #0A2035;
   padding: 20px;
 }
-header nav ul {
+
+nav ul {
   display: flex;
   list-style: none;
   justify-content: flex-end;
 }
-header nav li a {
-  color: white;
+nav li a {
+  color: #C5C5C5;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   padding: 10px;
+  margin-right: 50px;
 }
-header nav li a:hover {
+nav li a:hover {
+  color: #969696;
   text-decoration: underline;
-}/*# sourceMappingURL=style.css.map */
-header {
-  background-color: #0A2035;
-  padding: 20px;
 }
-header nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-}
-header nav li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-}
-header nav li a:hover {
-  text-decoration: underline;
+nav button {
+  padding: 15px;
+  background-color: #2E2E2E;
+  color: #d1d0d0;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
