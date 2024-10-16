@@ -37,3 +37,61 @@ header nav button {
   border-radius: 10px;
   margin-left: 20px;
 }
+
+footer {
+  background-color: #0A2035;
+  padding: 20px;
+  color: #C5C5C5;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2E2E2E;
+}
+
+footer .footer-content .logo img {
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+footer .footer-content ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-content li {
+  margin: 0 15px;
+}
+
+footer .footer-content li a {
+  color: #C5C5C5;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer .footer-content li a:hover {
+  color: #969696;
+  text-decoration: underline;
+}
+
+footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #969696;
+}
+
+@media (max-width: 768px) {
+  footer .footer-content ul {
+    flex-direction: column;
+  }
+  footer .footer-content ul li {
+    margin: 10px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
