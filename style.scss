@@ -4,13 +4,13 @@ header {
 
     nav {
         display: flex;
-        justify-content: space-between; // This will separate the logo and links
-        align-items: center; // Vertically center the logo, ul, and button
+        justify-content: space-between; 
+        align-items: center; 
         height: 80px;
 
         .logo {
             img {
-                height: 200px; // Adjust the logo size if needed
+                height: 200px; 
                 display: block;               
             }
         }
@@ -20,7 +20,7 @@ header {
             list-style: none;
             margin: 0;
             padding: 0;
-            margin-left: auto; // Push the links to the right
+            margin-left: auto; 
         }
 
         li {
@@ -43,7 +43,7 @@ header {
             background-color: #2E2E2E;
             color: #d1d0d0;
             border-radius: 10px;
-            margin-left: 20px; // Space between links and button
+            margin-left: 20px; 
         }
     }
 }
