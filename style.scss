@@ -1,5 +1,6 @@
 body{
   background-color:#2C2B2B;
+  font-family:  sans-serif;
 }
 
 header {
@@ -52,17 +53,17 @@ header {
     }
 }
 
-.mainh1{
+h1{
 
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   color: rgb(255, 252, 252);
  font-size: 80px;
  text-align: center;
  margin-bottom: -20px;
 }
 
-.mainh2{
-  font-family: 'Times New Roman', Times, serif;
+h2{
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   color: rgb(203, 202, 202);
  font-size: 40px;
  text-align: center;
@@ -70,45 +71,55 @@ header {
  font-weight: lighter;
 }
 
-.mainh3{
-  font-family: 'Times New Roman', Times, serif;
+h3{
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   color: rgb(255, 251, 251);
  font-size: 25px;
  text-align: center;
  font-weight: lighter;
 }
 
-/*
-.hero{
-  width: 100vw;
-  height: auto;
-  text-align: center;
 
-  img{
-    width: 90%;    
-    height: auto;   
-    
-    max-height: 70vh; 
-  }
-
+.card-img-overlay {
+  display: flex;             // Använd flexbox för att centrera
+  flex-direction: column;    // Ordnar innehållet vertikalt (kolumn)
+  justify-content: center;   // Centrerar innehållet vertikalt
+  align-items: center;       // Centrerar innehållet horisontellt
+  text-align: center;        // Centrerar texten i varje element (h1, h2, h3)
+  color: white;              // Vit text för bättre kontrast mot mörk bakgrund
 }
 
-*/
 
-.contact-item{
+.card-img {
+  filter: blur(3px);      // Gör bilden suddig
+  -webkit-filter: blur(3px);  // WebKit för äldre webbläsare
+  transform: scale(1.02);  // Gör bilden lite större för att undvika synliga kanter
+}
+
+.card-img-overlay {
+  position: relative;      // Behåller överläggets position
+  z-index: 2;              // Gör att texten ligger ovanpå den suddiga bilden
+  color: white;            // Gör texten vit för bättre kontrast
+}
+
+.card {
+  background-color: #00060c; // Ändrar bakgrundsfärgen för hela kortet (standard)
+  margin-top: 5px;
   
-    display: flex;               // Aktivera flexbox
-    flex-direction: column;      // Ordna innehållet i en kolumn
-    align-items: center;         // Centrera horisontellt
-    justify-content: center;     // Centrera vertikalt (om höjd anges)
-    margin-top: 50px;
-  }
   
-  .articlestyle {
-    text-align: center;          // Centrera texten i artikeln
-    max-width: 400px;           // Maximal bredd på artikeln (justera efter behov)
-    margin: 0 auto;             // Centrera artikeln inom sin flex-container
+  .card-body {
+    background: linear-gradient(#5c81b4, rgb(17, 14, 14)) ; // Bakgrundsfärg för kortets kropp
+    color: white;  
+      
+              // Ändrar textfärgen till vit för bättre kontrast
   }
+
+  .btn-primary {
+    background-color: #FFC008; // Ändrar färgen på knappen (t.ex. till tomatröd)
+    border-color: #FFC008;  
+    color: black   // Samma färg för kantlinjen på knappen
+  }
+}
 
 footer {
     background-color: #0A2035;
