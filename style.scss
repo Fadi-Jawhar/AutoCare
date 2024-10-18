@@ -95,8 +95,20 @@ header {
 
 */
 
-
-
+.contact-item{
+  
+    display: flex;               // Aktivera flexbox
+    flex-direction: column;      // Ordna innehållet i en kolumn
+    align-items: center;         // Centrera horisontellt
+    justify-content: center;     // Centrera vertikalt (om höjd anges)
+    margin-top: 50px;
+  }
+  
+  .articlestyle {
+    text-align: center;          // Centrera texten i artikeln
+    max-width: 400px;           // Maximal bredd på artikeln (justera efter behov)
+    margin: 0 auto;             // Centrera artikeln inom sin flex-container
+  }
 
 footer {
     background-color: #0A2035;

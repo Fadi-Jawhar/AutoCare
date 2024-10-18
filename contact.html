@@ -1,111 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-</head>
-<body>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="bg-dark text-white py-3">
-        <nav class="container d-flex justify-content-between align-items-center">
-          <a href="#" class="navbar-brand">
-            <img src="src/img/AutoCare.png" alt="logo" style="width: 180px" />
-          </a>
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="Services">Våra Tjänster</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="About">Om oss</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="Kontakt">Kontakta oss</a>
-            </li>
-          </ul>
-          <button class="btn btn-warning">Medlemskap</button>
-        </nav>
-      </header>
-
-
-      <div class="container my-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h1 class="mb-3">Contact Us</h1>
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="your-name" class="form-label">Your Name</label>
-                  <input type="text" class="form-control" id="your-name" name="your-name" required>
-                </div>
-                <div class="col-md-6">
-                  <label for="your-surname" class="form-label">Your Surname</label>
-                  <input type="text" class="form-control" id="your-surname" name="your-surname" required>
-                </div>
-                <div class="col-md-6">
-                  <label for="your-email" class="form-label">Your Email</label>
-                  <input type="email" class="form-control" id="your-email" name="your-email" required>
-                </div>
-                <div class="col-md-6">
-                  <label for="your-subject" class="form-label">Your Subject</label>
-                  <input type="text" class="form-control" id="your-subject" name="your-subject">
-                </div>
-                <div class="col-12">
-                  <label for="your-message" class="form-label">Your Message</label>
-                  <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
-                </div>
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <button data-res="<?php echo $sum; ?>" type="submit" class="btn btn-dark w-100 fw-bold" >Send</button>
-                    </div>
+      <nav class="container d-flex justify-content-between align-items-center">
+        <a href="#" class="navbar-brand">
+          <img src="src/img/AutoCare.png" alt="logo" style="width: 180px" />
+        </a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Services">Våra Tjänster</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="About">Om oss</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Kontakt">Kontakta oss</a>
+          </li>
+        </ul>
+        <button class="btn btn-warning">Medlemskap</button>
+      </nav>
+    </header>
+    <div class="container my-5">
+      <div class="row justify-content-between">
+        <div class="col-lg-6">
+          <h1 class="mb-3">Kontakta oss</h1>
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="your-name" class="form-label">Namn</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="your-name"
+                  name="your-name"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="your-surname" class="form-label">Efternamn</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="your-surname"
+                  name="your-surname"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="your-email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="your-email"
+                  name="your-email"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="your-subject" class="form-label">Telefon</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="your-subject"
+                  name="your-subject"
+                />
+              </div>
+              <div class="col-12">
+                <label for="your-message" class="form-label">Meddelande</label>
+                <textarea
+                  class="form-control"
+                  id="your-message"
+                  name="your-message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-6">
+                    <button
+                      data-res="?php echo $sum; ?"
+                      type="submit"
+                      class="btn btn-dark w-100 fw-bold"
+                    >
+                      Skicka
+                    </button>
                   </div>
                 </div>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-5">
+          <article class="articlestyle">
+            <h2 class="googlefont">AutoCare</h2>
+            <p>Besök oss på:</p>
+            <p>
+              Kungsgatan 6 <br />
+              113 54 Stockholm
+            </p>
+            <p>info@autocare.se</p>
+
+            <br />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7045.171660967312!2d18.07050650728214!3d59.33438352123404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1729272216071!5m2!1ssv!2sse"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </article>
         </div>
       </div>
+    </div>
 
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <a href="#" class="navbar-brand">
+          <img src="src/img/AutoCare.png" alt="logo" style="width: 120px" />
+        </a>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Services">Våra Tjänster</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="About">Om oss</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Kontakt">Kontakta oss</a>
+          </li>
+        </ul>
+      </div>
+      <div class="text-center mt-3">
+        <p class="mb-0">&copy; 2024 AutoCare. All rights reserved.</p>
+      </div>
+    </footer>
 
-
-
-
-
-
-      <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-          <a href="#" class="navbar-brand">
-            <img src="src/img/AutoCare.png" alt="logo" style="width: 120px" />
-          </a>
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="Services">Våra Tjänster</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="About">Om oss</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="Kontakt">Kontakta oss</a>
-            </li>
-          </ul>
-        </div>
-        <div class="text-center mt-3">
-          <p class="mb-0">&copy; 2024 AutoCare. All rights reserved.</p>
-        </div>
-      </footer>
-  
-      <!-- Bootstrap JS and Popper.js -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    
-</body>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
