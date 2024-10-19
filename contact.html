@@ -90,6 +90,50 @@
                   name="your-subject"
                 />
               </div>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="dropdownMenuButton"
+                >
+                  Ämne
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      data-value="Tvätt & Polering"
+                      >Tvätt & Polering</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" data-value="Medlemskap"
+                      >Medlemskap</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" data-value="Övrigt"
+                      >Övrigt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <script>
+                document
+                  .querySelectorAll(".dropdown-item")
+                  .forEach(function (item) {
+                    item.addEventListener("click", function (amne) {
+                      var selectedText = this.textContent;
+                      document.getElementById(
+                        "dropdownMenuButton"
+                      ).textContent = selectedText;
+                    });
+                  });
+              </script>
               <div class="col-12">
                 <label for="your-message" class="form-label">Meddelande</label>
                 <textarea
