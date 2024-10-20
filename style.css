@@ -117,6 +117,44 @@ h3 {
   margin: 0 auto;
 }
 
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: gold;
+}
+
+.review-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviewer {
+  font-weight: bold;
+}
+
+.reviewer small {
+  color: #777;
+}
+
 footer {
   background-color: #0A2035;
   padding: 20px;

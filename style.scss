@@ -1,187 +1,555 @@
-body{
-  background-color:#2C2B2B;
-  font-family:  sans-serif;
+// body{
+//   background-color:#2C2B2B;
+//   font-family:  sans-serif;
+// }
+
+// header {
+//     background-color: #0A2035;
+//     padding: 20px;
+
+//     nav {
+//         display: flex;
+//         justify-content: space-between; 
+//         align-items: center; 
+//         height: 80px;
+
+//         .logo {
+//             img {
+//                 height: 200px; 
+//                 display: block;               
+//             }
+//         }
+
+//         ul {
+//             display: flex;
+//             list-style: none;
+//             margin: 0;
+//             padding: 0;
+//             margin-left: auto; 
+//         }
+
+//         li {
+//             a {
+//                 color: #C5C5C5;
+//                 text-decoration: none;
+//                 font-size: 22px;
+//                 padding: 10px;
+//                 margin-right: 50px;
+
+//                 &:hover {
+//                     color: #969696;
+//                     text-decoration: underline;
+//                 }
+//             }
+//         }
+
+//         button {
+//             padding: 10px 15px;
+//             background-color: #2E2E2E;
+//             color: #d1d0d0;
+//             border-radius: 10px;
+//             margin-left: 20px; 
+//         }
+//     }
+// }
+
+// h1{
+
+//   font-family: 'Poppins', 'Times New Roman', Times, serif;
+//   color: rgb(255, 252, 252);
+//  font-size: 80px;
+//  text-align: center;
+//  margin-bottom: -20px;
+// }
+
+// h2{
+//   font-family: 'Poppins', 'Times New Roman', Times, serif;
+//   color: rgb(203, 202, 202);
+//  font-size: 40px;
+//  text-align: center;
+//  margin-bottom: -1px;
+//  font-weight: lighter;
+// }
+
+// h3{
+//   font-family: 'Poppins', 'Times New Roman', Times, serif;
+//   color: rgb(255, 251, 251);
+//  font-size: 25px;
+//  text-align: center;
+//  font-weight: lighter;
+// }
+
+
+// .card-img-overlay {
+//   display: flex;             // Använd flexbox för att centrera
+//   flex-direction: column;    // Ordnar innehållet vertikalt (kolumn)
+//   justify-content: center;   // Centrerar innehållet vertikalt
+//   align-items: center;       // Centrerar innehållet horisontellt
+//   text-align: center;        // Centrerar texten i varje element (h1, h2, h3)
+//   color: white;              // Vit text för bättre kontrast mot mörk bakgrund
+// }
+
+
+// .card-img {
+//   filter: blur(3px);      // Gör bilden suddig
+//   -webkit-filter: blur(3px);  // WebKit för äldre webbläsare
+//   transform: scale(1.02);  // Gör bilden lite större för att undvika synliga kanter
+// }
+
+// .card-img-overlay {
+//   position: relative;      // Behåller överläggets position
+//   z-index: 2;              // Gör att texten ligger ovanpå den suddiga bilden
+//   color: white;            // Gör texten vit för bättre kontrast
+// }
+
+// .card {
+//   background-color: #00060c; // Ändrar bakgrundsfärgen för hela kortet (standard)
+//   margin-top: 5px;
+  
+  
+//   .home-card-body {
+//     background: linear-gradient(#5c81b4, rgb(17, 14, 14)) ; // Bakgrundsfärg för kortets kropp
+//     color: white;  
+      
+//               // Ändrar textfärgen till vit för bättre kontrast
+//   }
+
+//   .btn-primary {
+//     background-color: #FFC008; // Ändrar färgen på knappen (t.ex. till tomatröd)
+//     border-color: #FFC008;  
+//     color: black   // Samma färg för kantlinjen på knappen
+//   }
+// }
+
+
+// .contact-item {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   margin-top: 50px;
+// }
+
+// .articlestyle {
+//   text-align: center;
+//   max-width: 400px;
+//   margin: 0 auto;
+// }
+
+// .review-container {
+//   margin-bottom: 50px; 
+// }
+
+// .stars {
+//   display: flex;
+//   flex-direction: row-reverse;
+//   justify-content: center;
+// }
+
+// .stars input {
+//   display: none;
+// }
+
+// .stars label {
+//   font-size: 2rem;
+//   color: #ccc;
+//   cursor: pointer;
+// }
+
+// .stars input:checked ~ label,
+// .stars label:hover,
+// .stars label:hover ~ label {
+//   color: gold;
+// }
+
+// .review-card {
+//   background-color: #f8f9fa;
+//   border-radius: 10px;
+//   padding: 20px;
+//   margin-bottom: 15px;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+// }
+
+// .reviewer {
+//   font-weight: bold;
+// }
+
+// .reviewer small {
+//   color: #777;
+// }
+
+// footer {
+//     background-color: #0A2035;
+//     padding: 20px;
+//     color: #C5C5C5;
+//   }
+//   footer .footer-content {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding-bottom: 20px;
+//     border-bottom: 1px solid #2E2E2E;
+//   }
+//   footer .footer-content .logo img {
+//     height: 150px;
+//     margin-bottom: 10px;
+//   }
+//   footer .footer-content ul {
+//     display: flex;
+//     justify-content: center;
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//   }
+//   footer .footer-content li {
+//     margin: 0 15px;
+//   }
+//   footer .footer-content li a {
+//     color: #C5C5C5;
+//     text-decoration: none;
+//     font-size: 18px;
+//   }
+//   footer .footer-content li a:hover {
+//     color: #969696;
+//     text-decoration: underline;
+//   }
+//   footer .copyright {
+//     text-align: center;
+//     margin-top: 20px;
+//     font-size: 14px;
+//     color: #969696;
+//   }
+//   @media (max-width: 768px) {
+//     footer .footer-content ul {
+//       flex-direction: column;
+//     }
+//     footer .footer-content ul li {
+//       margin: 10px 0;
+//     }
+//   }
+// Variables for colors
+// Variables for colors
+$primary-color: #0A2035;
+$secondary-color: #2C2B2B;
+$text-color-light: #C5C5C5;
+$text-color-dark: #969696;
+$highlight-color: #FFC008;
+
+// General styles
+body {
+  background-color: $secondary-color;
+  font-family: sans-serif;
 }
 
 header {
-    background-color: #0A2035;
-    padding: 20px;
+  background-color: $primary-color;
+  padding: 10px 0; // Adjust padding for a smaller header
 
-    nav {
-        display: flex;
-        justify-content: space-between; 
-        align-items: center; 
-        height: 80px;
+  nav {
+    display: flex;
+    flex-direction: column; // Default to column for mobile
+    align-items: center;
 
-        .logo {
-            img {
-                height: 200px; 
-                display: block;               
-            }
-        }
-
-        ul {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            margin-left: auto; 
-        }
-
-        li {
-            a {
-                color: #C5C5C5;
-                text-decoration: none;
-                font-size: 22px;
-                padding: 10px;
-                margin-right: 50px;
-
-                &:hover {
-                    color: #969696;
-                    text-decoration: underline;
-                }
-            }
-        }
-
-        button {
-            padding: 10px 15px;
-            background-color: #2E2E2E;
-            color: #d1d0d0;
-            border-radius: 10px;
-            margin-left: 20px; 
-        }
+    .navbar-brand {
+      margin: 0 auto; // Center logo
     }
+
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.5); // Change the border color for better visibility
+    }
+    
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-nav .nav-link {
+      display: block; // Ensure the nav links are block elements
+    }
+    
+    // Ensure the collapse class is styled properly
+    .collapse {
+      display: none !important; // Hide by default, will be managed by Bootstrap
+    }
+    
+    .collapse.show {
+      display: block !important; // Show when toggled
+    }
+
+    // Navigation links
+    ul {
+      display: none; // Hide menu by default on mobile
+      flex-direction: column; // Stack links on mobile
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      &.active {
+        display: flex; // Show menu when active
+      }
+    }
+
+    li {
+      a {
+        color: $text-color-light;
+        text-decoration: none;
+        font-size: 18px; // Mobile font size
+        padding: 10px;
+        margin: 5px 0; // Spacing on mobile
+
+        &:hover {
+          color: $text-color-dark;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: $highlight-color;
+      color: black;
+      border-radius: 10px;
+      margin-top: 10px; // Spacing above button
+    }
+  }
 }
 
-h1{
-
+h1 {
   font-family: 'Poppins', 'Times New Roman', Times, serif;
   color: rgb(255, 252, 252);
- font-size: 80px;
- text-align: center;
- margin-bottom: -20px;
+  font-size: 40px; // Mobile size
+  text-align: center;
+  margin-bottom: 20px; // Increase bottom margin
 }
 
-h2{
+h2 {
   font-family: 'Poppins', 'Times New Roman', Times, serif;
   color: rgb(203, 202, 202);
- font-size: 40px;
- text-align: center;
- margin-bottom: -1px;
- font-weight: lighter;
+  font-size: 24px; // Mobile size
+  text-align: center;
+  margin-bottom: 10px; // Increase bottom margin
+  font-weight: lighter;
 }
 
-h3{
+h3 {
   font-family: 'Poppins', 'Times New Roman', Times, serif;
   color: rgb(255, 251, 251);
- font-size: 25px;
- text-align: center;
- font-weight: lighter;
+  font-size: 20px; // Mobile size
+  text-align: center;
+  font-weight: lighter;
 }
-
 
 .card-img-overlay {
-  display: flex;             // Använd flexbox för att centrera
-  flex-direction: column;    // Ordnar innehållet vertikalt (kolumn)
-  justify-content: center;   // Centrerar innehållet vertikalt
-  align-items: center;       // Centrerar innehållet horisontellt
-  text-align: center;        // Centrerar texten i varje element (h1, h2, h3)
-  color: white;              // Vit text för bättre kontrast mot mörk bakgrund
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  color: white; 
 }
-
 
 .card-img {
-  filter: blur(3px);      // Gör bilden suddig
-  -webkit-filter: blur(3px);  // WebKit för äldre webbläsare
-  transform: scale(1.02);  // Gör bilden lite större för att undvika synliga kanter
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  transform: scale(1.02); 
 }
 
 .card-img-overlay {
-  position: relative;      // Behåller överläggets position
-  z-index: 2;              // Gör att texten ligger ovanpå den suddiga bilden
-  color: white;            // Gör texten vit för bättre kontrast
+  position: relative; 
+  z-index: 2; 
+  color: white; 
 }
 
 .card {
-  background-color: #00060c; // Ändrar bakgrundsfärgen för hela kortet (standard)
+  background-color: #00060c; 
   margin-top: 5px;
-  
-  
-  .card-body {
-    background: linear-gradient(#5c81b4, rgb(17, 14, 14)) ; // Bakgrundsfärg för kortets kropp
+
+  .home-card-body {
+    background: linear-gradient(#5c81b4, rgb(17, 14, 14)); 
     color: white;  
-      
-              // Ändrar textfärgen till vit för bättre kontrast
   }
 
   .btn-primary {
-    background-color: #FFC008; // Ändrar färgen på knappen (t.ex. till tomatröd)
-    border-color: #FFC008;  
-    color: black   // Samma färg för kantlinjen på knappen
+    background-color: $highlight-color; 
+    border-color: $highlight-color;  
+    color: black;  
   }
 }
-
 
 .contact-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px; // Increased margin for mobile
 }
 
 .articlestyle {
   text-align: center;
-  max-width: 400px;
+  max-width: 100%; // Full width on mobile
   margin: 0 auto;
+  padding: 0 20px; // Padding for mobile spacing
+}
+
+.review-container {
+  margin-bottom: 20px; // Adjust margin for mobile
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: gold;
+}
+
+.review-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviewer {
+  font-weight: bold;
+}
+
+.reviewer small {
+  color: #777;
 }
 
 footer {
-    background-color: #0A2035;
-    padding: 20px;
-    color: #C5C5C5;
-  }
-  footer .footer-content {
+  background-color: $primary-color;
+  padding: 20px;
+  color: $text-color-light;
+
+  .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #2E2E2E;
+    border-bottom: 1px solid $secondary-color;
+
+    .logo img {
+      height: 150px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column; // Stack links on mobile
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 10px 0; // Spacing between links
+    }
+
+    li a {
+      color: $text-color-light;
+      text-decoration: none;
+      font-size: 16px; // Font size for mobile
+    }
+
+    li a:hover {
+      color: $text-color-dark;
+      text-decoration: underline;
+    }
   }
-  footer .footer-content .logo img {
-    height: 150px;
-    margin-bottom: 10px;
-  }
-  footer .footer-content ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  footer .footer-content li {
-    margin: 0 15px;
-  }
-  footer .footer-content li a {
-    color: #C5C5C5;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  footer .footer-content li a:hover {
-    color: #969696;
-    text-decoration: underline;
-  }
-  footer .copyright {
+
+  .copyright {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
     color: #969696;
   }
-  @media (max-width: 768px) {
-    footer .footer-content ul {
-      flex-direction: column;
-    }
-    footer .footer-content ul li {
-      margin: 10px 0;
+}
+
+// Media Queries for larger screens
+@media (min-width: 768px) {
+  header {
+    padding: 20px; // Reset padding for larger screens
+
+    nav {
+      flex-direction: row; // Change to row layout for larger screens
+      justify-content: space-between; 
+      height: 80px; 
+
+      .hamburger {
+        display: none; // Hide hamburger on larger screens
+      }
+
+      ul {
+        display: flex; // Show menu on larger screens
+        flex-direction: row; // Change links to row
+        margin-left: auto; 
+      }
+
+      li {
+        a {
+          font-size: 22px; // Larger font for desktop
+          margin-right: 50px; // Spacing on desktop
+        }
+      }
+
+      button {
+        margin-left: 20px; // Spacing left for button
+      }
     }
   }
+
+  h1 {
+    font-size: 80px; // Larger heading for desktop
+  }
+
+  h2 {
+    font-size: 40px; // Larger heading for desktop
+  }
+
+  h3 {
+    font-size: 25px; // Larger heading for desktop
+  }
+
+  .articlestyle {
+    max-width: 400px; // Restrict width on larger screens
+  }
+
+  .contact-item {
+    margin-top: 50px; // More margin for larger screens
+  }
+
+  .review-container {
+    margin-bottom: 50px; // Larger bottom margin
+  }
+
+  footer .footer-content {
+    flex-direction: row; // Row layout for footer links on larger screens
+  }
+
+  footer .footer-content ul {
+    flex-direction: row; // Row layout for footer links
+  }
+
+  footer .footer-content li {
+    margin: 0 15px; // Spacing between footer links
+  }
+}
+
+
