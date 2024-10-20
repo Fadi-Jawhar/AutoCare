@@ -243,19 +243,19 @@ body {
 
 header {
   background-color: $primary-color;
-  padding: 10px 0; // Adjust padding for a smaller header
+  padding: 10px 0; 
 
   nav {
     display: flex;
-    flex-direction: column; // Default to column for mobile
+    flex-direction: column; 
     align-items: center;
 
     .navbar-brand {
-      margin: 0 auto; // Center logo
+      margin: 0 auto; 
     }
 
     .navbar-toggler {
-      border-color: rgba(255, 255, 255, 0.5); // Change the border color for better visibility
+      border-color: rgba(255, 255, 255, 0.5); 
     }
     
     .navbar-toggler-icon {
@@ -263,28 +263,28 @@ header {
     }
 
     .navbar-nav .nav-link {
-      display: block; // Ensure the nav links are block elements
+      display: block; 
     }
     
-    // Ensure the collapse class is styled properly
+    
     .collapse {
-      display: none !important; // Hide by default, will be managed by Bootstrap
+      display: none !important; 
     }
     
     .collapse.show {
-      display: block !important; // Show when toggled
+      display: block !important;
     }
 
-    // Navigation links
+ 
     ul {
-      display: none; // Hide menu by default on mobile
-      flex-direction: column; // Stack links on mobile
+      display: none; 
+      flex-direction: column;
       list-style: none;
       margin: 0;
       padding: 0;
 
       &.active {
-        display: flex; // Show menu when active
+        display: flex; 
       }
     }
 
@@ -292,9 +292,9 @@ header {
       a {
         color: $text-color-light;
         text-decoration: none;
-        font-size: 18px; // Mobile font size
+        font-size: 18px; 
         padding: 10px;
-        margin: 5px 0; // Spacing on mobile
+        margin: 5px 0; 
 
         &:hover {
           color: $text-color-dark;
@@ -308,7 +308,7 @@ header {
       background-color: $highlight-color;
       color: black;
       border-radius: 10px;
-      margin-top: 10px; // Spacing above button
+      margin-top: 10px; 
     }
   }
 }
@@ -316,24 +316,24 @@ header {
 h1 {
   font-family: 'Poppins', 'Times New Roman', Times, serif;
   color: rgb(255, 252, 252);
-  font-size: 40px; // Mobile size
+  font-size: 40px; 
   text-align: center;
-  margin-bottom: 20px; // Increase bottom margin
+  margin-bottom: 20px; 
 }
 
 h2 {
   font-family: 'Poppins', 'Times New Roman', Times, serif;
   color: rgb(203, 202, 202);
-  font-size: 24px; // Mobile size
+  font-size: 24px; 
   text-align: center;
-  margin-bottom: 10px; // Increase bottom margin
+  margin-bottom: 10px; 
   font-weight: lighter;
 }
 
 h3 {
   font-family: 'Poppins', 'Times New Roman', Times, serif;
   color: rgb(255, 251, 251);
-  font-size: 20px; // Mobile size
+  font-size: 20px; 
   text-align: center;
   font-weight: lighter;
 }
@@ -375,23 +375,28 @@ h3 {
   }
 }
 
+.skicka-in-btn-dark{
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
 .contact-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px; // Increased margin for mobile
+  margin-top: 20px; 
 }
 
 .articlestyle {
   text-align: center;
-  max-width: 100%; // Full width on mobile
+  max-width: 100%; 
   margin: 0 auto;
-  padding: 0 20px; // Padding for mobile spacing
+  padding: 0 20px; 
 }
 
 .review-container {
-  margin-bottom: 20px; // Adjust margin for mobile
+  margin-bottom: 20px; 
 }
 
 .stars {
@@ -451,7 +456,7 @@ footer {
 
     ul {
       display: flex;
-      flex-direction: column; // Stack links on mobile
+      flex-direction: column; 
       justify-content: center;
       list-style: none;
       padding: 0;
@@ -459,13 +464,13 @@ footer {
     }
 
     li {
-      margin: 10px 0; // Spacing between links
+      margin: 10px 0;
     }
 
     li a {
       color: $text-color-light;
       text-decoration: none;
-      font-size: 16px; // Font size for mobile
+      font-size: 16px; 
     }
 
     li a:hover {
@@ -482,73 +487,73 @@ footer {
   }
 }
 
-// Media Queries for larger screens
+
 @media (min-width: 768px) {
   header {
-    padding: 20px; // Reset padding for larger screens
+    padding: 20px; 
 
     nav {
-      flex-direction: row; // Change to row layout for larger screens
+      flex-direction: row; 
       justify-content: space-between; 
       height: 80px; 
 
       .hamburger {
-        display: none; // Hide hamburger on larger screens
+        display: none; 
       }
 
       ul {
-        display: flex; // Show menu on larger screens
-        flex-direction: row; // Change links to row
+        display: flex; 
+        flex-direction: row; 
         margin-left: auto; 
       }
 
       li {
         a {
-          font-size: 22px; // Larger font for desktop
-          margin-right: 50px; // Spacing on desktop
+          font-size: 22px; 
+          margin-right: 50px; 
         }
       }
 
       button {
-        margin-left: 20px; // Spacing left for button
+        margin-left: 20px; 
       }
     }
   }
 
   h1 {
-    font-size: 80px; // Larger heading for desktop
+    font-size: 80px; 
   }
 
   h2 {
-    font-size: 40px; // Larger heading for desktop
+    font-size: 40px; 
   }
 
   h3 {
-    font-size: 25px; // Larger heading for desktop
+    font-size: 25px;
   }
 
   .articlestyle {
-    max-width: 400px; // Restrict width on larger screens
+    max-width: 400px; 
   }
 
   .contact-item {
-    margin-top: 50px; // More margin for larger screens
+    margin-top: 50px; 
   }
 
   .review-container {
-    margin-bottom: 50px; // Larger bottom margin
+    margin-bottom: 50px; 
   }
 
   footer .footer-content {
-    flex-direction: row; // Row layout for footer links on larger screens
+    flex-direction: row; 
   }
 
   footer .footer-content ul {
-    flex-direction: row; // Row layout for footer links
+    flex-direction: row; 
   }
 
   footer .footer-content li {
-    margin: 0 15px; // Spacing between footer links
+    margin: 0 15px; 
   }
 }
 

@@ -119,6 +119,11 @@ h3 {
   color: black;
 }
 
+.skicka-in-btn-dark {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
 .contact-item {
   display: flex;
   flex-direction: column;
