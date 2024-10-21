@@ -5,31 +5,47 @@ body {
 
 header {
   background-color: #0A2035;
-  padding: 20px;
+  padding: 10px 0;
 }
 header nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  height: 80px;
 }
-header nav .logo img {
-  height: 200px;
+header nav .navbar-brand {
+  margin: 0 auto;
+}
+header nav .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+header nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+header nav .navbar-nav .nav-link {
   display: block;
 }
+header nav .collapse {
+  display: none !important;
+}
+header nav .collapse.show {
+  display: block !important;
+}
 header nav ul {
-  display: flex;
+  display: none;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: auto;
+}
+header nav ul.active {
+  display: flex;
 }
 header nav li a {
   color: #C5C5C5;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   padding: 10px;
-  margin-right: 50px;
+  margin: 5px 0;
 }
 header nav li a:hover {
   color: #969696;
@@ -37,33 +53,33 @@ header nav li a:hover {
 }
 header nav button {
   padding: 10px 15px;
-  background-color: #2E2E2E;
-  color: #d1d0d0;
+  background-color: #FFC008;
+  color: black;
   border-radius: 10px;
-  margin-left: 20px;
+  margin-top: 10px;
 }
 
 h1 {
   font-family: "Poppins", "Times New Roman", Times, serif;
   color: rgb(255, 252, 252);
-  font-size: 80px;
+  font-size: 40px;
   text-align: center;
-  margin-bottom: -20px;
+  margin-bottom: 20px;
 }
 
 h2 {
   font-family: "Poppins", "Times New Roman", Times, serif;
   color: rgb(203, 202, 202);
-  font-size: 40px;
+  font-size: 24px;
   text-align: center;
-  margin-bottom: -1px;
+  margin-bottom: 10px;
   font-weight: lighter;
 }
 
 h3 {
   font-family: "Poppins", "Times New Roman", Times, serif;
   color: rgb(255, 251, 251);
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   font-weight: lighter;
 }
@@ -93,7 +109,7 @@ h3 {
   background-color: #00060c;
   margin-top: 5px;
 }
-.card .card-body {
+.card .home-card-body {
   background: linear-gradient(#5c81b4, rgb(17, 14, 14));
   color: white;
 }
@@ -103,18 +119,28 @@ h3 {
   color: black;
 }
 
+.skicka-in-btn-dark {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
 .contact-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .articlestyle {
   text-align: center;
-  max-width: 400px;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+.review-container {
+  margin-bottom: 20px;
 }
 
 .stars {
@@ -160,43 +186,37 @@ footer {
   padding: 20px;
   color: #C5C5C5;
 }
-
 footer .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid #2E2E2E;
+  border-bottom: 1px solid #2C2B2B;
 }
-
 footer .footer-content .logo img {
   height: 150px;
   margin-bottom: 10px;
 }
-
 footer .footer-content ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 footer .footer-content li {
-  margin: 0 15px;
+  margin: 10px 0;
 }
-
 footer .footer-content li a {
   color: #C5C5C5;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
-
 footer .footer-content li a:hover {
   color: #969696;
   text-decoration: underline;
 }
-
 footer .copyright {
   text-align: center;
   margin-top: 20px;
@@ -204,11 +224,55 @@ footer .copyright {
   color: #969696;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  header nav {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+  }
+  header nav .hamburger {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+  header nav li a {
+    font-size: 22px;
+    margin-right: 50px;
+  }
+  header nav button {
+    margin-left: 20px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  .articlestyle {
+    max-width: 400px;
+  }
+  .contact-item {
+    margin-top: 50px;
+  }
+  .review-container {
+    margin-bottom: 50px;
+  }
+  footer .footer-content {
+    flex-direction: row;
+  }
   footer .footer-content ul {
-    flex-direction: column;
+    flex-direction: row;
   }
-  footer .footer-content ul li {
-    margin: 10px 0;
+  footer .footer-content li {
+    margin: 0 15px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
