@@ -341,23 +341,20 @@ h3 {
 .card-img-overlay {
   display: flex; 
   flex-direction: column; 
-  justify-content: center; 
+  //justify-content: center; 
   align-items: center; 
   text-align: center; 
   color: white; 
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .card-img {
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
   transform: scale(1.02); 
 }
 
-.card-img-overlay {
-  position: relative; 
-  z-index: 2; 
-  color: white; 
-}
+
 
 .card {
   background-color: #00060c; 

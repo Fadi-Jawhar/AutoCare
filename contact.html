@@ -13,17 +13,21 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
     <style>
       body {
-        background-color: rgb(189, 183, 183); 
+        background-color: rgb(189, 183, 183);
       }
     </style>
+  </head>
+  <body>
     <header class="bg-dark text-white py-3">
       <nav class="container navbar navbar-expand-lg">
         <a href="index.html" class="navbar-brand">
-          <img src="src/img/AutoCare.png" alt="logo" style="width: 180px" />
+          <img
+            src="src/img/AutoCare.png"
+            alt="AutoCare logo"
+            style="width: 180px"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -64,9 +68,10 @@
         </div>
       </nav>
     </header>
-    <div class="container my-5">
-      <div class="row justify-content-between">
-        <div class="col-lg-6">
+
+    <main class="container my-5">
+      <section class="row justify-content-between">
+        <article class="col-lg-6">
           <h1 class="mb-3">Kontakta oss</h1>
           <form>
             <div class="row g-3">
@@ -101,58 +106,47 @@
                 />
               </div>
               <div class="col-md-6">
-                <label for="your-subject" class="form-label">Telefon</label>
+                <label for="your-phone" class="form-label">Telefon</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="your-subject"
-                  name="your-subject"
+                  id="your-phone"
+                  name="your-phone"
                 />
               </div>
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  id="dropdownMenuButton"
-                >
-                  Ämne
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-value="Tvätt & Polering"
-                      >Tvätt & Polering</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#" data-value="Medlemskap"
-                      >Medlemskap</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#" data-value="Övrigt"
-                      >Övrigt</a
-                    >
-                  </li>
-                </ul>
+              <div class="col-md-6">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    id="subject-dropdown"
+                  >
+                    Välj ämne
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-value="Tvätt & Polering"
+                        >Tvätt & Polering</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-value="Medlemskap"
+                        >Medlemskap</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-value="Övrigt"
+                        >Övrigt</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
-
-              <script>
-                document
-                  .querySelectorAll(".dropdown-item")
-                  .forEach(function (item) {
-                    item.addEventListener("click", function (amne) {
-                      var selectedText = this.textContent;
-                      document.getElementById(
-                        "dropdownMenuButton"
-                      ).textContent = selectedText;
-                    });
-                  });
-              </script>
               <div class="col-12">
                 <label for="your-message" class="form-label">Meddelande</label>
                 <textarea
@@ -164,33 +158,27 @@
                 ></textarea>
               </div>
               <div class="col-12">
-                <div class="row">
-                  <div class="col-md-6">
-                    <button
-                      data-res="?php echo $sum; ?"
-                      type="submit"
-                      class="btn btn-dark w-100 fw-bold skicka-in-btn-dark"
-                    >
-                      Skicka in
-                    </button>
-                  </div>
-                </div>
+                <button
+                  type="submit"
+                  class="btn btn-dark w-100 fw-bold skicka-in-btn-dark"
+                >
+                  Skicka in
+                </button>
               </div>
             </div>
           </form>
-        </div>
+        </article>
 
-        <div class="col-lg-5">
+        <aside class="col-lg-5">
           <article class="articlestyle">
             <h2 class="contacth2">AutoCare</h2>
             <p>Besök oss på:</p>
-            <p>
-              Kungsgatan 6 <br />
-              113 54 Stockholm
-            </p>
-            <p>08-702 00 90</p>
-            <p>info@autocare.se</p>
-
+            <address>
+              Kungsgatan 6<br />
+              113 54 Stockholm<br />
+              <a href="tel:+4687020090">08-702 00 90</a><br />
+              <a href="mailto:info@autocare.se">info@autocare.se</a>
+            </address>
             <br />
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7045.171660967312!2d18.07050650728214!3d59.33438352123404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1729272216071!5m2!1ssv!2sse"
@@ -202,14 +190,18 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </article>
-        </div>
-      </div>
-    </div>
+        </aside>
+      </section>
+    </main>
 
     <footer class="bg-dark text-white py-4">
       <div class="container text-center">
         <a href="index.html" class="navbar-brand">
-          <img src="src/img/AutoCare.png" alt="logo" style="width: 120px" />
+          <img
+            src="src/img/AutoCare.png"
+            alt="AutoCare logo"
+            style="width: 120px"
+          />
         </a>
         <ul class="nav justify-content-center">
           <li class="nav-item">
@@ -236,5 +228,14 @@
 
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.querySelectorAll(".dropdown-item").forEach(function (item) {
+        item.addEventListener("click", function () {
+          const selectedText = this.textContent;
+          document.getElementById("subject-dropdown").textContent =
+            selectedText;
+        });
+      });
+    </script>
   </body>
 </html>
