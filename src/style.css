@@ -12,6 +12,10 @@ header nav {
   flex-direction: column;
   align-items: center;
 }
+header nav .nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
 header nav .navbar-brand {
   margin: 0 auto;
 }
